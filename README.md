@@ -7,7 +7,7 @@ Application
 Dockerfile 
 
 ECR resource 
-output = application url in ECR 
+(output = application url in ECR)  
 
 init script 
 - run docker 
