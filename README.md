@@ -17,6 +17,11 @@ init script (systemD unit file)
 
 launch instance 
 (userdata = init script)  
+- init.service needs to be put into /etc/systemd/system (?) 
+- systemctl daemon-reload 
+- systemctl status init.service (?) 
+- systemctl start init 
+- systemctl status docker 
 
 auto scaling group 
 - put instance in ASG of 1 

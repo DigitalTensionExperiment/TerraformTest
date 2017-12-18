@@ -12,4 +12,4 @@ ExecStartPre=/usr/bin/docker pull docker pull 0000000000zw/mdga
 ExecStart=/usr/bin/docker run --rm --name %n flaskApp
 
 [Install]
-WantedBy=multi-user.target 
+WantedBy=multi-user.target
