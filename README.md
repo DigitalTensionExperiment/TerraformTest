@@ -27,3 +27,61 @@ auto scaling group
 - put instance in ASG of 1 
 
 
+#### Notes and Questions 
+
+Where should state be stored? In backend "consul" or "s3"? 
+Doing this ensure always having the latest version of the state; 
+* Is/When using s3 remote state, config the AWS creds in aws config; 
+
+$ terraform init 
+
+WARNING: Bucket (...) created successfully. 
+Error setting properties and permissions on the bucket. 
+
+
+Do you want to copy the state from "s3"?
+  Would you like to copy the state from your prior backend "s3" to the
+  newly configured "s3" backend? If you're reconfiguring the same backend,
+  answering "yes" or "no" shouldn't make a difference. Please answer exactly
+  "yes" or "no".
+
+
+Do you want to copy state from "s3" to "s3"?
+  Pre-existing state was found in "s3" while migrating to "s3". No existing
+  state was found in "s3". Do you want to copy the state from "s3" to
+  "s3"? Enter "yes" to copy and "no" to start with an empty state.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
