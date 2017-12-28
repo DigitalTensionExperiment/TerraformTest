@@ -29,7 +29,7 @@ resource "aws_instance" "testbox0" {
 
 }
 
-output "ip" {
-  value = "${aws_instance.testbox0.public_ip}"
-}
+//output "ip" {
+//  value = "${aws_instance.testbox0.public_ip}"
+//}
 
