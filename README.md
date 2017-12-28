@@ -52,10 +52,19 @@ Do you want to copy state from "s3" to "s3"?
   "s3"? Enter "yes" to copy and "no" to start with an empty state.
 
 
+$ terraform destroy 
+
+aws_instance.testbox0: Refreshing state... (ID: i-035eb029dfa698c45)
+data.aws_ip_ranges.european_ec2: Refreshing state...
+
+Error: Error refreshing state: 1 error(s) occurred:
+
+* data.aws_ip_ranges.european_ec2: 1 error(s) occurred:
+
+* data.aws_ip_ranges.european_ec2: data.aws_ip_ranges.european_ec2: Error reading response body: unexpected EOF
 
 
-
-
+Ran terraform init to overcome this^ error; 
 
 
 
